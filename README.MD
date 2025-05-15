@@ -2,27 +2,15 @@ README.TXT
 
 
 
-
-
-# 1) (Optional) Create & activate a venv
+```
 python3 -m venv .venv
 source .venv/bin/activate
-
-# 2) Install dependencies
 pip install playwright requests alpaca-py
-
-# 3) Install Playwright browsers
 playwright install
-
-# 4) Record your auth state (logs you in interactively)
 python record_auth_state.py
-
-# 5) Refresh 3 paper accounts (with $1 000 000 each) and emit constants
 python refresh_three_paper_accounts.py
-
-# — OR — override defaults:
 NUM_SLOTS=3 STARTING_CASH=1000000 python refresh_three_paper_accounts.py
-
+```
 
 \===============================================================================
 ALPACA PAPER‐ACCOUNT REFRESHER
